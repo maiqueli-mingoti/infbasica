@@ -1,0 +1,47 @@
+﻿UNIVERSIDADE FEDERAL DA FRONTEIRA SUL - CAMPUS CHAPECÓ
+CURSO DE BACHAREL EM CIÊNCIA DA COMPUTAÇÃO
+CCR: INFORMÁTICA BÁSICA
+DOCENTE: CLAUNIR PAVAN
+DISCENTE: MAIQUELI EDUARDA DAMA MINGOTI
+
+
+TRABALHO 4 - LINUX E GIT
+  
+-sh-4.2$ rm -rf /home/mirasia/uffs/*                                 
+-sh-4.2$ mkdir -p /home/mirasia/uffs/trabalho                        
+-sh-4.2$ mkdir /home/mirasia/uffs/textos                             
+-sh-4.2$ cd /home/mirasia/uffs                                       
+-sh-4.2$ touch teste.txt                                             
+-sh-4.2$ nano teste.txt                                              
+-sh-4.2$ cp teste.txt teste1.txt                                     
+-sh-4.2$ cp teste.txt teste.asc                                      
+-sh-4.2$ cp *.txt uffs/trabalho/                                     
+cp: target ‘uffs/trabalho/’ is not a directory                       
+-sh-4.2$ cp *.txt /home/mirasia/uffs/trabalho/                       
+-sh-4.2$ mv teste.asc uffs/textos/                                   
+mv: cannot move ‘teste.asc’ to ‘uffs/textos/’: No such file or directo
+ry                                                                   
+-sh-4.2$ mv teste.asc /home/mirasoa/uffs/textos/                     
+mv: cannot move ‘teste.asc’ to ‘/home/mirasoa/uffs/textos/’: No such f
+ile or directory                                                     
+-sh-4.2$ mv teste.asc /home/mirasia/uffs/textos/                     
+-sh-4.2$ ls -l /home/mirasia/uffs/textos/                            
+total 4                                                              
+-rw-rw-r--. 1 mirasia mirasia 67 Nov 29 18:30 teste.asc              
+-sh-4.2$ chmod 664 teste.txt                                         
+-sh-4.2$ chmod 644 teste1.txt                                        
+-sh-4.2$ mkdir /home/mirasia/uffs_backup                             
+-sh-4.2$ cp -r uffs/* /home/mirasia/uffs_backup/                     
+cp: cannot stat ‘uffs/*’: No such file or directory                  
+-sh-4.2$ cp -r /home/mirasia/uffs/ /home/mirasia/uffs_backup/        
+-sh-4.2$ mv uffs/textos/teste.asc uffs/textos/outro_texto.txt        
+mv: cannot stat ‘uffs/textos/teste.asc’: No such file or directory   
+-sh-4.2$ mv /home/mirasia/uffs/textos/teste.asc /home/mirasia/uffs/tex
+tos/outro_texto.txt
+-sh-4.2$ cat /home/mirasia/uffs/textos/outro_texto.txt               
+20230004643                                                          
+Maiqueli Eduarda Dama Mingoti                                        
+13/03/2000                                                           
+Quilombo (SC)                                                        
+-sh-4.2$ grep "Maiqueli" /home/mirasia/uffs/textos/outro_texto.txt   
+Maiqueli Eduarda Dama Mingoti
